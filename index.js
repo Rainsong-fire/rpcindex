@@ -9,7 +9,7 @@ let options = {
     headers: {'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.q8bmFopRibNBkyc_0pI8ze11d9EdDTmyjxwfcbfTFbE'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.WalletValidateAddress", "params": ["t1npbdebqhmt6vo6asvrg64knpxjiftacpv4ccvja"] }'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.ChainHead", "params": [] }'
     //cautions: the params is not string ,it is a list!!!!!!!
 }
 
@@ -17,6 +17,7 @@ function callback(error, response, body) {
     console.log(response.statusCode)
     if (!error && response.statusCode == 200) {
         console.log(response.statusCode)
+        console.log('成功拉成功啦成功啦成功啦成功拉黑陈陈公公啦陈公公啦车哦那个高龄啊')
         json = response.body;
         var obj = JSON.parse(json);
         hex = obj.result.number;
