@@ -1,12 +1,12 @@
 let request = require('request')
 
-// Call the Infura API and check that the address is valid.
-//this object is used to detail the request to infura
+// Call the Infura/remotenode API and check that the address is valid.
+//this object is used to detail the request to infura/node
 let options = {
     url:'http://127.0.0.1:2345/rpc/v1/filecoin',
     method: 'post',
     headers: { 'content-type' : 'application/json' },
-    auth: { 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.q8bmFopRibNBkyc_0pI8ze11d9EdDTmyjxwfcbfTFbE'},
+    headers: { 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.xJTU4X44u-9GZB4C-t4U6Jt91NlTJqOurnimGN1AjFs'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
     body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.ChainHead", "params": [] }'
