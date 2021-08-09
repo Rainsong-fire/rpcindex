@@ -6,7 +6,7 @@ let options = {
     url:'http://127.0.0.1:1234/rpc/v1/filecoin',
     method: 'post',
     headers: { 'content-type' : 'application/json' },
-    headers: {'Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.xJTU4X44u-9GZB4C-t4U6Jt91NlTJqOurnimGN1AjFs'},
+    headers: {'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.xJTU4X44u-9GZB4C-t4U6Jt91NlTJqOurnimGN1AjFs'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
     body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.WalletValidateAddress", "params": ["t1npbdebqhmt6vo6asvrg64knpxjiftacpv4ccvja"] }'
