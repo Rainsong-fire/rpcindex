@@ -3,13 +3,13 @@ let request = require('request')
 // Call the Infura API and check that the address is valid.
 //this object is used to detail the request to infura
 let options = {
-    url:'https://filecoin.infura.io',
+    url:'http://127.0.0.1:2345/rpc/v1/filecoin',
     method: 'post',
     headers: { 'content-type' : 'application/json' },
-    auth: { user: '1wLpgwOI1m6kzvnsqrT0dfjmetd', pass: 'deb20f42292a719787b5bb0a6fa87410'},
+    auth: { 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.q8bmFopRibNBkyc_0pI8ze11d9EdDTmyjxwfcbfTFbE'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.WalletValidateAddress", "params": ["t1npbdebqhmt6vo6asvrg64knpxjiftacpv4ccvja"] }'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.ChainHead", "params": [] }'
     //cautions: the params is not string ,it is a list!!!!!!!
 }
 
