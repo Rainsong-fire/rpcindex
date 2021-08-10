@@ -19,6 +19,7 @@ function callback(error, response, body) {
         console.log(response.statusCode)
         console.log('成功拉成功啦成功啦成功啦成功拉黑陈陈公公啦陈公公啦车哦那个高龄啊')
         json = response.body;
+        var obj = JSON.parse(json);
         hex = obj.result.number;
         final = parseInt(hex, 16)
         console.log(final)
