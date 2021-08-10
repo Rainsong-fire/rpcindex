@@ -21,6 +21,7 @@ function callback(error, response, body) {
         json = response.body;
         console.log('this is the body')
         console.log(body)
+        console.log('this is the response')
         console.log(response)
     }
 }
