@@ -9,7 +9,7 @@ let options = {
     headers: {'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.xJTU4X44u-9GZB4C-t4U6Jt91NlTJqOurnimGN1AjFs'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigPropose", "params": ["f010090","f04943","0","t09299",2,""] }'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigPropose", "params": ["f010090","f09900","0","t09299",2,[]]}'
     //cautions: the params is not string ,it is a list!!!!!!!there is no map in the list, only the params listed by order.
 }
 
@@ -19,7 +19,6 @@ function callback(error, response, body) {
         console.log(response.statusCode)
         console.log('成功拉成功啦成功啦成功啦成功拉黑陈陈公公啦陈公公啦车哦那个高龄啊')
         json = response.body;
-        var obj = JSON.parse(json);
         hex = obj.result.number;
         final = parseInt(hex, 16)
         console.log(final)
