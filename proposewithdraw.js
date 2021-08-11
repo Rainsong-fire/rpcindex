@@ -9,7 +9,7 @@ let options = {
     headers: {'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.q8bmFopRibNBkyc_0pI8ze11d9EdDTmyjxwfcbfTFbE'},
 //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigPropose", "params": ["t012289","f09900","0","t1b3odeaziuhyzrkcewzjr7kpi3uo4b5ruf4juiey",16,"1000000000000000000",]}'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigPropose", "params": ["t012289","f09900","0","t1b3odeaziuhyzrkcewzjr7kpi3uo4b5ruf4juiey",16,""AmountRequested": "10000000000000000"",]}'
     //cautions: the params is not string ,it is a list!!!!!!!there is no map in the list, only the params listed by order.
 }
 
