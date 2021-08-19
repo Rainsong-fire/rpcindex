@@ -10,7 +10,7 @@ let options = {
     //the last member is the body, where stores the details of api request, such as the method called the params.etc.
     //cautions: the body is a string as a whole!!!!
 
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigGetPending", "params": ["t012289",[{"/":"bafy2bzaceatf3zgsuzms2jokfgfbvwiap2lucheoncsrks5bongf52lclg4cy"},{"/": "bafy2bzacedpvqqooyvmahxftnxmnng72gwnpws7qi4c43hhoidajrpqq32jqu"}]]}'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.MsigGetPending", "params": ["t012289",[{"/":"bafy2bzaceb76g23ctpcxmdslzasvunhisenxu76lwxsbft56stz5y5m4lmkjo"},{"/": "bafy2bzacectuvfefp7strikyuy4yiniognmcohlmgjr5yw5tztraqaovu5ide"}]]}'
     //cautions: the params is not string ,it is a list!!!!!!!there is no map in the list, only the params listed by order.
     //params 中，两个tipsetkey 都是放在[]中的。每个都放在{} 内的。
 }
