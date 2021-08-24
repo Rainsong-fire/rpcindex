@@ -9,7 +9,7 @@ let options = {
     headers: {'Authorization' : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.q8bmFopRibNBkyc_0pI8ze11d9EdDTmyjxwfcbfTFbE'},
 
 // 本程序要进行getstateminerinfo，用直连node ，调用rpc 的方式。用的是read权限。address为 miner actor 的address。tipsetkey 放在的是单独的[]中。
-    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.StateReadState", "params": ["t012289",[{"/":"bafy2bzacecaev6iggjwh3ddme7ggvribodaiw5hcmwkq4ydd6mss2arm6cd3c"}]]}'
+    body:'{"jsonrpc":"2.0","id":0, "method":"Filecoin.StateReadState", "params": ["t012289",[{"/":"bafy2bzacecuxlbdn2qvia5sfs6xcfruhmh55enwngduayyc7usythnk5ux3da"}]]}'
     //cautions: the params is not string ,it is a list!!!!!!!there is no map in the list, only the params listed by order.
     //params 中，两个tipsetkey 都是放在[]中的。每个都放在{} 内的。
 }
